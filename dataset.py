@@ -69,12 +69,7 @@ for d in d_list :
     for n2 in n2_str:
         ngramstring_length2 += n2[0] + "" + n2[1] + " "
 
-    n3_str = zip(*[ngram_sub[i:] for i in range(3)])
-    ngramstring_length3 = ""
-    for n3 in n3_str:
-        ngramstring_length3 += n3[0] + "" + n3[1] + "" + n3[2] + " "
-
-    total_str = twitter_str +  "" + nltk_str + "" + ngramstring_length1 + "" +ngramstring_length2 + "" + ngramstring_length3
+    total_str = twitter_str +  "" + nltk_str + "" + ngramstring_length1 + "" +ngramstring_length2
     n_list.append(total_str)
 
 
